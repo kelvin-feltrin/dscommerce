@@ -1,23 +1,12 @@
-import computerImg from './assets/computer.png';
-import cartImg from './assets/cart.svg';
 import './App.css'
 
-function App() {
+import computerImg from './assets/computer.png';
+import HeaderClient from './components/HeaderClient';
+
+export default function App() {
   return (
     <>
-      <header className="dsc-header-client">
-        <nav className="dsc-container">
-            <h1>DSCommerce</h1>
-            <div className="navbar-right">
-                <div className="dsc-menu-items-container">
-                    <div className="dsc-menu-item">
-                        <img src={cartImg} alt="Carrinho de compras" />
-                    </div>
-                </div>
-                <a href="#">Entrar</a>
-            </div>
-        </nav>
-    </header>
+      <HeaderClient />
 
     <main>
         <section id="product-details-section" className="dsc-container">
@@ -55,5 +44,3 @@ function App() {
     </>
   );
 }
-
-export default App
