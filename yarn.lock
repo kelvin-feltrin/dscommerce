@@ -287,7 +287,7 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.35.0", "@eslint/js@^9.33.0":
+"@eslint/js@9.35.0", "@eslint/js@^9.35.0":
   version "9.35.0"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.35.0.tgz#ffbc7e13cf1204db18552e9cd9d4a8e17c692d07"
 
@@ -503,7 +503,7 @@
   dependencies:
     csstype "^3.0.2"
 
-"@typescript-eslint/eslint-plugin@8.44.0":
+"@typescript-eslint/eslint-plugin@8.44.0", "@typescript-eslint/eslint-plugin@^8.44.0":
   version "8.44.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.44.0.tgz#d72bf8b2d3052afee919ba38f38c57138eee0396"
   dependencies:
@@ -517,7 +517,7 @@
     natural-compare "^1.4.0"
     ts-api-utils "^2.1.0"
 
-"@typescript-eslint/parser@8.44.0":
+"@typescript-eslint/parser@8.44.0", "@typescript-eslint/parser@^8.44.0":
   version "8.44.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-8.44.0.tgz#0436fbe0a72f86d3366d2d157d480524b0ab3f26"
   dependencies:
@@ -787,7 +787,7 @@ eslint-visitor-keys@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-4.2.1.tgz#4cfea60fe7dd0ad8e816e1ed026c1d5251b512c1"
 
-eslint@^9.33.0:
+eslint@^9.35.0:
   version "9.35.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-9.35.0.tgz#7a89054b7b9ee1dfd1b62035d8ce75547773f47e"
   dependencies:
