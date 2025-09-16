@@ -16,8 +16,8 @@ export default function ProductDetailsCard() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias commodi iste minus nobis sed nisi, consectetur earum perferendis quod praesentium culpa minima doloremque quaerat, facilis voluptate officia a et.
                 </p>
                 <div className="dsc-category-container">
-                    <ProductCategory />
-                    <ProductCategory />
+                    <ProductCategory name="Eletrônicos" />
+                    <ProductCategory name="Computadores" />
                 </div>
             </div>
         </div>
