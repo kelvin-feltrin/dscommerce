@@ -2,7 +2,7 @@ import './styles.css';
 
 import { useEffect, useState } from 'react';
 import * as cartService from '../../../services/cart-service';
-import { OrderDTO, OrderItemDTO } from '../../../models/order';
+import { type OrderDTO, OrderItemDTO } from '../../../models/order';
 
 const item1 : OrderItemDTO = new OrderItemDTO(
     4, 1, "PC Gamer", 1200, "https://raw.githubusercontent.com/devsuperior/dscatalog-resources/master/backend/img/4-big.jpg"
