@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './styles.css';
 
 type Props = {
-    onSearch: Function;
+    onSearch: (text: string) => void;
 }
 
 export default function SearchBar({onSearch} : Props) {
