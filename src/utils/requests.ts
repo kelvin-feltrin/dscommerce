@@ -14,3 +14,27 @@ export function requestBackend(config: AxiosRequestConfig) {
 
     return axios( {...config, baseURL: BASE_URL, headers} );
 }
+
+axios.interceptors.request.use(
+    function (config) {
+        return config;
+    },
+    function (error) {
+        return Promise.reject(error);
+    }
+);
+
+axios.interceptors.response.use(
+    function (response) {
+        return response;
+    },
+    function (error) {
+        if (error.response.status === 401) {
+            console.log("DEU 401!");
+        }
+        if (error.response.status === 403) {
+            console.log("DEU 403!");
+        }
+        return Promise.reject(error);
+    }
+);
