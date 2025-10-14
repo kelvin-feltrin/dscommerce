@@ -8,6 +8,7 @@ import * as productService from '../../../services/product-service';
 import SearchBar from '../../../components/SearchBar';
 import CatalogCard from '../../../components/CatalogCard';
 import ButtonNextPage from '../../../components/ButtonNextPage';
+import { hasAnyRoles } from '../../../services/auth-service';
 
 type QueryParams = {
     page: number;
