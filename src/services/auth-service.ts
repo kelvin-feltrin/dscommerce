@@ -1,7 +1,8 @@
 import QueryString from "qs";
+import jwtDecode from "jwt-decode";
 import { CLIENT_ID, CLIENT_SECRET } from "../utils/system";
 import { requestBackend } from "../utils/requests";
-import type { CredentialsDTO } from "../models/auth";
+import type { AccessTokenPayloadDTO, CredentialsDTO } from "../models/auth";
 import type { AxiosRequestConfig } from "axios";
 import * as accessTokenRepository from '../localstorage/access-token-repository';
 
@@ -33,4 +34,17 @@ export function saveAccessToken(token: string) {
 
 export function getAccessToken() {
     return accessTokenRepository.get();
+}
+
+export function getAccessTokenPayload(): AccessTokenPayloadDTO | undefined {
+    try {
+        const token = accessTokenRepository.get();
+
+        return token == null 
+            ? undefined 
+            : (jwtDecode(token) as AccessTokenPayloadDTO);
+    } 
+    catch (error) {
+        return undefined;
+    }
 }
