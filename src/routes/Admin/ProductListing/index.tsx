@@ -7,6 +7,7 @@ import editIcon from '../../../assets/edit.svg';
 import deleteIcon from '../../../assets/delete.svg';
 import SearchBar from '../../../components/SearchBar';
 import ButtonNextPage from '../../../components/ButtonNextPage';
+import DialogInfo from '../../../components/DialogInfo';
 
 type QueryParams = {
     page: number;
@@ -87,6 +88,7 @@ export default function ProductListing() {
                 <ButtonNextPage onNextPage={handleNextPageClick}/>
             }
         </section>
+        <DialogInfo />
     </main>
     );
 }
