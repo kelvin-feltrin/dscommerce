@@ -9,6 +9,8 @@ import SearchBar from '../../../components/SearchBar';
 import ButtonNextPage from '../../../components/ButtonNextPage';
 import DialogInfo from '../../../components/DialogInfo';
 import DialogConfirmation from '../../../components/DialogConfirmation';
+import ButtonInverse from '../../../components/ButtonInverse';
+import { useNavigate } from 'react-router-dom';
 
 type QueryParams = {
     page: number;
@@ -16,6 +18,8 @@ type QueryParams = {
 }
 
 export default function ProductListing() {
+
+    const navigate = useNavigate();
 
     const [dialogInfoData, setDialogInfoData] = useState({
         visible: false,
@@ -72,6 +76,10 @@ export default function ProductListing() {
         setDialogConfirmationData({ ...dialogConfirmationData, visible: false });
     }
 
+    function handleNewProductClick() {
+        navigate("/admin/products/create");
+    }
+
     useEffect(() => {
         productService.findPageRequest(queryParams.page, queryParams.name)
             .then(response => {
@@ -86,9 +94,9 @@ export default function ProductListing() {
         <section id="product-listing-section" className="dsc-container">
             <h2 className="dsc-section-title dsc-mb20">Cadastro de produtos</h2>
 
-            <div className="dsc-btn-page-container">
-                <div className="dsc-btn dsc-btn-white dsc-mb20">
-                    Novo
+            <div className="dsc-btn-page-container dsc-mb20">
+                <div onClick={handleNewProductClick}>
+                    <ButtonInverse text='Novo' />
                 </div>
             </div>
 
