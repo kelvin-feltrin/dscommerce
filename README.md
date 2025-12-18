@@ -1,6 +1,6 @@
 # DsCommerce
 
-* Leia em [Português]()
+* Leia em [Português](https://github.com/kelvin-feltrin/dscommerce/blob/main/README-pt.md)
 
 ## About the project
 The "DsCommerce" is a project about an online product sales. It applies the following concepts:
