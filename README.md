@@ -1,69 +1,31 @@
-# React + TypeScript + Vite
+# DsCommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Leia em [Português]()
 
-Currently, two official plugins are available:
+## About the project
+The "DsCommerce" is a project about an online product sales. It applies the following concepts:
+- Component creation;
+- Navigation through routes;
+- Shopping cart system stored in local storage;
+- Product list with pagination and filters;
+- Field validation and error display using the "dirty" field technique;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project based on Nelio Alves' course: [ReactJS Professional](https://devsuperior.com.br/curso-reactjs-professional)
 
-## Expanding the ESLint configuration
+## Layout web
+![Web 1](https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Web1.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Web 2](https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Web2.png)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Web 3](https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Web3.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Layout mobile
+<div align="left">
+  <img width="33%" src="https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Mobile1.png">
+  <img width="33%" src="https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Mobile2.png">
+  <img width="33%" src="https://raw.githubusercontent.com/kelvin-feltrin/dscommerce/refs/heads/main/assets/Mobile3.png">
+</div>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Tech Stack
+- HTML / CSS / JS / TypeScript
+- ReactJS
